@@ -1,0 +1,314 @@
+.fadingLine {
+  border:0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0,0,0,0),rgba(0,0,0,75),rgba(0,0,0,0));
+}
+
+ .blackLine {
+   border: 0;
+   height: 1px;
+   background: #333;
+   background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  }
+
+#addFile{
+  height: 40px;
+  width: 40px;
+}
+
+#addFile:hover{
+  cursor:pointer;
+}
+
+.customShadow{
+  box-shadow: 5px 5px 5px #aaaaaa;
+}
+
+.darkFadingLine{
+  border:0;
+  height: 1px;
+  background:#333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.selected{
+  color: #0069D9;
+}
+
+.photo{
+
+  max-height: 200px;
+}
+
+
+
+/*  gallery style*/
+
+.rij > .column {
+  padding: 0 8px;
+}
+
+/* .rij:after {
+  content: "";
+} */
+
+
+.rij {
+    display:inline-block;
+    padding: 10px;
+}
+
+/* The Modal (background) */
+.picPopup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.picPopup-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.sluit {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.sluit:hover,
+.sluit:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next:not([href]):not([tabindex]),
+.next:not([href]):not([tabindex]):focus,
+.next:not([href]):not([tabindex]):hover,
+.prev:not([href]):not([tabindex]),
+.prev:not([href]):not([tabindex]):focus,
+.prev:not([href]):not([tabindex]):hover {
+ color:white;
+ text-decoration:none
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#slideshow{
+  margin-bottom: 20px;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#vorige, #volgende{
+  background-color: #dc3545;
+  color:white;
+}
+#volgende:hover, #vorige:hover{
+  background-color: white;
+  color:#dc3545;
+}
+.slideshowBtn{
+  cursor: pointer;
+  font-size: 16px;
+  padding: 7px 15px 7px 15px;
+  border-radius: 3px;
+}
+
+
+#slideshowBtnDiv{
+  text-align: center;
+  margin-top:15px;
+}
+
+/* login page css  */
+#gridLogin{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "image image image loginColumn";
+  height:100%;
+  width:100%;
+
+}
+#title{
+  font-size: 50px;
+  color:#dc3545;
+  text-align: center;
+}
+#loginContainer{
+  grid-area: loginContainer;
+}
+#background{
+
+  grid-area: image;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.red{
+  color: #dc3545;
+}
+.red:hover{
+  color: rgba(0,0,0,.5);
+  text-decoration: none;
+}
+.navbar-light .navbar-nav .nav-link:hover, .nav-link:hover {
+    color: rgba(0,0,0,.5) ;
+
+}
+.navbar-light .navbar-nav .nav-link, .nav-link {
+    color: #dc3545;
+    font-size: 16px;
+}
+
+.red:focus, .form-control:focus{
+  -webkit-box-shadow: 0 0 0 .2rem rgba(255,0,0,.25);
+  box-shadow: 0 0 0 .2rem rgba(255,0,0,.25);
+  border-color: #c4c4c4;
+
+}
+.dropdown-item:active{
+  background-color: #dc3545 !important;
+}
+
+.postTitle{
+  color: black;
+}
+.postTitle:hover{
+  color: #dc3545;
+  text-decoration: none;
+}
+
+.slideshowPhoto{
+  max-width: 100%;
+  max-height: 100%;
+}
+.mySlidesP{
+  margin: auto;
+}
+
+
+#loginColumn{
+  grid-area: loginColumn;
+  height: 100%;
+  width:100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 25% 33% 33%;
+  grid-template-areas: "." "loginContainer" "."
+}
+
+@media only screen and (max-width: 1560px) {
+  #gridLogin{
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-areas: "image image loginColumn";
+
+  }
+}
+@media only screen and (max-width: 1050px) {
+  #gridLogin{
+    grid-template-columns:  1fr 1fr 2fr;
+    grid-template-areas: "image image loginColumn";
+
+  }
+}
+@media only screen and (max-width: 950px) {
+  #manageTable{
+    width: 875px;
+    overflow-x: scroll;
+    display:block;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #gridLogin{
+    grid-template-areas: "loginColumn loginColumn loginColumn";
+
+  }
+  #background{
+    display: none;
+
+  }
+  #slideshow{
+    width: 90%;
+  }
+
+
+}
