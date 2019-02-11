@@ -155,6 +155,7 @@ class StoreController extends Controller
 
     $post = Post::where('id', $post_id)->first();
 
+    // send mail that a new comment was posted
     Mail::send(new CommentMail());
 
     return redirect("/post/".$post->slug);
