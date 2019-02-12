@@ -12,7 +12,7 @@
     </style>
   </head>
   <body>
-    <h1>Er is een nieuwe comment op deze<a  style="color:#dc3545;text-decoration:none;" href="{{$link}}">post</a> geplaatst.</h1>
+    <h1>Er is een nieuwe comment op deze<a  style="color:#dc3545;text-decoration:none;" href="{{$link}}"> post</a> geplaatst.</h1>
 
     </form>
   </body>
