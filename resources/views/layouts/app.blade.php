@@ -4,6 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="{{asset('storage/upload/icons/'. 'icon16.png')}}" sizes="16x16">
+    <link rel="icon" type="image/png" href="{{asset('storage/upload/icons/'. 'icon32.png')}}" sizes="32x32">
+
+    <link rel="icon" type="image/x-icon" href="{{asset('storage/upload/icons/'. 'icon.ico')}}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('storage/upload/icons/'. 'icon.ico')}}">
+
+
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
