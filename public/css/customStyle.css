@@ -275,6 +275,9 @@ img.hover-shadow {
   grid-template-rows: 25% 33% 33%;
   grid-template-areas: "." "loginContainer" "."
 }
+.text-sm-left{
+  text-align: right !important;
+}
 
 @media only screen and (max-width: 1560px) {
   #gridLogin{

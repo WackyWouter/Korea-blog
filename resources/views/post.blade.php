@@ -70,7 +70,7 @@
                 <h5 class="text-left">{{$comment->users()->first()->name}}</h3>
               </div>
               <div class="col-sm-3">
-                <p class="text-right text-sm-left"> {{ Carbon\Carbon::parse($comment->created_at)->format('d/m/Y H:i') }} </p>
+                <p class=" text-sm-left"> {{ Carbon\Carbon::parse($comment->created_at)->format('d/m/Y H:i') }} </p>
               </div>
             </div>
 
