@@ -6,7 +6,7 @@
       <div class="col-xl-9">
         <a class="red" href="/dashboard">Go back to the dashboard</a>
         <div class="card mt-3 customShadow">
-          <div class="card-header"><h3>Posts</h3></div>
+          <div class="card-header"><h3>Photos</h3></div>
           <div class="card-body">
             <form  action="/updatePhotos" method="POST">
               <meta name="csrf-token" content="{{ csrf_token() }}">
