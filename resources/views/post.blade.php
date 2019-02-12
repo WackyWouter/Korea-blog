@@ -66,20 +66,20 @@
           @foreach($comments as $comment)
           <div class="container">
             <div class="row justify-content-between">
-              <div class="col-md-9">
+              <div class="col-sm-9">
                 <h5 class="text-left">{{$comment->users()->first()->name}}</h3>
               </div>
-              <div class="col-md-3">
-                <p class="text-right"> {{ Carbon\Carbon::parse($comment->created_at)->format('d/m/Y H:i') }} </p>
+              <div class="col-sm-3">
+                <p class="text-right text-sm-left"> {{ Carbon\Carbon::parse($comment->created_at)->format('d/m/Y H:i') }} </p>
               </div>
             </div>
 
             <div class="row justify-content-start">
-              <div class="col-md-10">
+              <div class="col-sm-10">
                 <p class="m-0">{{$comment-> text}} </p>
               </div>
               @if(!empty($role))
-              <div class="col-md-2">
+              <div class="col-sm-2">
                 <a href="{{ url('/delete/comment/'.$post->id.'/'.$comment->id) }}" class="btn btn-danger float-right">Delete</a>
               </div>
               @endif

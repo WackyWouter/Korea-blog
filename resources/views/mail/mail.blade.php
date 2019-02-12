@@ -12,7 +12,7 @@
     </style>
   </head>
   <body>
-    <h1>Ik heb een nieuwe <a  style="color:#dc3545;text-decoration:none;" href="{{$link}}">post</a> geupload.</h1>
+    <h1>Ik heb een nieuwe <a  style="color:#dc3545;text-decoration:none;" href="{{$link}}"> post</a> geupload.</h1>
 
     </form>
   </body>

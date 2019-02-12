@@ -24,7 +24,7 @@ Route::get('/account', 'AccountController@index');
 Route::post('/saveAccount', 'AccountController@update');
 
 
-
+// admin routes
 
 Route::get('/addAnnouncement', 'AddAnnouncementController@index')->middleware("checkAdmin");
 Route::get('/manage/posts', 'ManagePostsController@index')->middleware("checkAdmin");
