@@ -313,14 +313,7 @@ img.hover-shadow {
     grid-template-areas: "loginColumn loginColumn loginColumn";
 
   }
-<<<<<<< HEAD
 
-=======
-  .custom-col-12{
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
->>>>>>> 04f4382c1c8954df39d864a991c9a148a35d8a7f
   #background{
     display: none;
 
