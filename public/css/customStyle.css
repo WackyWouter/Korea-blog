@@ -267,6 +267,10 @@ img.hover-shadow {
 .mySlidesP{
   margin: auto;
 }
+.fullscreenPic{
+  width: 100%;
+  height: auto;
+}
 
 
 #loginColumn{

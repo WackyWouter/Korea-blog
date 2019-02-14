@@ -24,7 +24,7 @@
 
             <div class="mySlides">
               <div class="numbertext">{{$index + 1}} / {{$photoTotal}}</div>
-              <img src="{{asset('storage/upload/'. $photo->name)}}" >
+              <img class="fullscreenPic" src="{{asset('storage/upload/'. $photo->name)}}" >
             </div>
 
           @endforeach
