@@ -91,7 +91,7 @@
                       <button type="submit" class="btn btn-danger">
                           {{ __('Inloggen') }}
                       </button>
-                      <a type="submit" class="btn btn-danger" href="{{ route('register') }}">
+                      <a type="submit" id="rmWebkitAppearance" style="-webkit-appearance:none;"class="btn btn-danger" href="{{ route('register') }}">
                           {{ __('Registreren') }}
                       </a> <br>
 

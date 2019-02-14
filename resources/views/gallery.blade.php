@@ -3,7 +3,7 @@
 @section('content')
 <div class="container-fluid">
     <div class="row justify-content-center">
-      <div class="gallery col-10 text-center">
+      <div class="gallery col-11 custom-col-12 text-center">
             @foreach($photos as $index => $photo)
 
             <div class="rij">
@@ -24,7 +24,7 @@
 
             <div class="mySlides">
               <div class="numbertext">{{$index + 1}} / {{$photoTotal}}</div>
-              <img src="{{asset('storage/upload/'. $photo->name)}}" style="width:100%">
+              <img src="{{asset('storage/upload/'. $photo->name)}}" >
             </div>
 
           @endforeach
