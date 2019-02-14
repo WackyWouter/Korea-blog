@@ -64,7 +64,7 @@
                       @endif
                     </div>
                     <p>{{$post->intro}}</p>
-                    <a class="red" href="{{'/post/'.$post->slug}}">More...</a>
+                    <a class="red" href="{{'/post/'.$post->slug}}">Lees verder...</a>
                 </div>
               </div>
             </div>
