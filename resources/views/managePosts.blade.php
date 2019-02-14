@@ -11,7 +11,7 @@
             <form  action="/updatePosts" method="POST">
               <meta name="csrf-token" content="{{ csrf_token() }}">
               {{ csrf_field() }}
-              <table class="table table-striped">
+              <table id="manageTable" class="table table-striped">
                 <thead>
                   <tr>
                     <th scope="col">Id</th>
