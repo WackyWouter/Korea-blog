@@ -20,6 +20,10 @@
   cursor:pointer;
 }
 
+#rmWebkitAppearance{
+  -webkit-appearance:none;
+}
+
 .customShadow{
   box-shadow: 5px 5px 5px #aaaaaa;
 }
@@ -36,8 +40,8 @@
 }
 
 .photo{
-
-  max-height: 200px;
+  max-width: 350px;
+  max-height: 300px;
 }
 
 
@@ -292,6 +296,10 @@ img.hover-shadow {
     grid-template-areas: "image image loginColumn";
 
   }
+  .custom-col-12{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 @media only screen and (max-width: 950px) {
   #manageTable{
@@ -305,6 +313,7 @@ img.hover-shadow {
     grid-template-areas: "loginColumn loginColumn loginColumn";
 
   }
+
   #background{
     display: none;
 
