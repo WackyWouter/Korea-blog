@@ -8,7 +8,7 @@
 
             <div class="rij">
               <div class="kolom">
-                <img src="{{asset('storage/upload/'. $photo->name)}}" style="width:100%" onclick="openModal();currentSlide( {{$index + 1}} )" class="hover-shadow img-thumbnail photo cursor">
+                <img src="{{asset('storage/upload/'. $photo->name)}}"  onclick="openModal();currentSlide( {{$index + 1}} )" class="hover-shadow img-thumbnail photo cursor">
               </div>
             </div>
 
