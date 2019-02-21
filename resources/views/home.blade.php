@@ -63,7 +63,7 @@
                         @endif
                       @endif
                     </div>
-                    <p>{{$post->intro}}</p>
+                    <p class="preserveLineBreak">{{$post->intro}}</p>
                     <a class="red" href="{{'/post/'.$post->slug}}">Lees verder...</a>
                 </div>
               </div>
