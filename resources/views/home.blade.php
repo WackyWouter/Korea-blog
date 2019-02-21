@@ -43,12 +43,12 @@
             <div class="card  mt-5 customShadow">
                 <div class="card-header">
                   <div class="row justify-content-between">
-                    <div class="col-md-4">
+                    <div class="col-sm-8">
                       <a class="postTitle" href="{{'/post/'.$post->slug}}">
                         <h3 class="text-left">{{$post->title}}</h3>
                       </a>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-sm-4">
                       <p class="text-right"> {{ Carbon\Carbon::parse($post->created_at)->format('d/m/Y') }} </p>
                     </div>
                   </div>
