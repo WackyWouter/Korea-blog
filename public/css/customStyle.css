@@ -44,6 +44,11 @@
   max-height: 350px;
 }
 
+.preserveLineBreak{
+  white-space: pre-wrap;
+  white-space: pre-line;
+}
+
 
 
 /*  gallery style*/

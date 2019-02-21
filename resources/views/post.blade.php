@@ -37,8 +37,8 @@
             </div>
 
 
-            <p>{{ $post -> intro }}</p>
-            <p>{{ $post -> text }}</p>
+            <p class="preserveLineBreak">{{ $post -> intro }}</p>
+            <p class="preserveLineBreak">{{ $post -> text }}</p>
           </div>
         </div>
       </div>
@@ -76,7 +76,7 @@
 
             <div class="row justify-content-start">
               <div class="col-sm-10">
-                <p class="m-0">{{$comment-> text}} </p>
+                <p class="m-0 preserveLineBreak">{{$comment-> text}} </p>
               </div>
               @if(!empty($role))
               <div class="col-sm-2">
