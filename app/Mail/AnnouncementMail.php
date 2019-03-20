@@ -32,7 +32,7 @@ class AnnouncementMail extends Mailable
     {
         $users = user::where('onMailingList', 'True')->get();
         $announcement = announcement::latest()->first()->text;
-      
-        return $this->view('mail.announcement', ["announcement" => $announcement])->subject("Nieuwe Mededeling")->to($users);
+
+        return $this->view('mail.announcement', ["announcement" => $announcement])->subject("Nieuwe Mededeling")->to("wouter.korea.blog@gmail.com")->bcc($users);
     }
 }

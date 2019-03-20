@@ -38,6 +38,6 @@ class SendMail extends Mailable
 
 
 
-        return $this->view('mail.mail', ["link" => $link])->subject("Nieuwe post")->to($users);
+        return $this->view('mail.mail', ["link" => $link])->subject("Nieuwe post")->to("wouter.korea.blog@gmail.com")->bcc($users);
     }
 }
