@@ -92,6 +92,14 @@
         <main class="py-4">
             @yield('content')
         </main>
+
+        <img onclick="up()" src="{{asset('storage/upload/icons/'. 'up.png')}}" alt="up" id="up">
     </div>
+    <script type="text/javascript">
+      function up(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
 </body>
 </html>
