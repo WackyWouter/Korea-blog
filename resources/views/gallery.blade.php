@@ -67,12 +67,40 @@
   function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
+    var imgs = document.getElementsByClassName('fullscreenPic');
+    var picPopupContent = document.getElementsByClassName('picPopup-content');
+    picPopupContent = picPopupContent[0];
+    console.log(picPopupContent);
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
     slides[slideIndex-1].style.display = "block";
+    var photoInfo = imgs[slideIndex-1].getBoundingClientRect();
+    var height = photoInfo.height;
+    var width = photoInfo.width;
+    console.log(photoInfo + ", " + width + ", " + height );
+
+    if (height > width) {
+      console.log("vertical");
+      if(!picPopupContent.classList.contains("vertical")){
+        picPopupContent.classList.add("vertical");
+      }
+      if(picPopupContent.classList.contains("horizontal")){
+        picPopupContent.classList.remove("horizontal");
+      }
+
+    }else if (height <= width) {
+      console.log("horizontal");
+      if(!picPopupContent.classList.contains("horizontal")){
+        picPopupContent.classList.add("horizontal");
+      }
+      if(picPopupContent.classList.contains("vertical")){
+        picPopupContent.classList.remove("vertical");
+      }
+    }
+
   }
 </script>
 

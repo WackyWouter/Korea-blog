@@ -35,6 +35,13 @@
   background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
+.vertical{
+  width:30%;
+}
+.horizontal{
+  width: 90%;
+}
+
 .selected{
   color: #0069D9;
 }
@@ -87,7 +94,6 @@
   background-color: #fefefe;
   margin: auto;
   padding: 0;
-  width: 90%;
   max-width: 1200px;
 }
 
@@ -309,6 +315,9 @@ img.hover-shadow {
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .vertical{
+    width: 40%;
+  }
 }
 @media only screen and (max-width: 950px) {
   #manageTable{
@@ -322,7 +331,9 @@ img.hover-shadow {
     grid-template-areas: "loginColumn loginColumn loginColumn";
 
   }
-
+  .vertical{
+    width:50%;
+  }
   #background{
     display: none;
 
@@ -331,8 +342,23 @@ img.hover-shadow {
     width: 90%;
   }
 }
+@media only screen and (max-width: 700px){
+  .vertical{
+    width:60%;
+  }
+}
+@media only screen and (max-width: 600px){
+  .vertical{
+    width:70%;
+  }
+}
 @media only screen and (max-width: 576px){
   .text-sm-left{
     text-align: left !important;
+  }
+}
+@media only screen and (max-width: 500px){
+  .vertical{
+    width:90%;
   }
 }
